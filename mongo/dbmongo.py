@@ -3,6 +3,7 @@ import pymongo
 
 class dbmongo():
     def __init__(self):
+        
         self.client = MongoClient("mongodb+srv://adm:12345@cluster0.2utnw.mongodb.net/?retryWrites=true&w=majority")
         self.db = self.client['database']
         
